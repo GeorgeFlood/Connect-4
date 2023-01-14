@@ -1,0 +1,12 @@
+@mixin font-face($font-name, $font-path, $font-weight: normal) {
+  @font-face {
+    font-family: $font-name;
+    src: url($font-path) format("truetype");
+    font-weight: $font-weight;
+  }
+}
+
+//easy copy & paste
+// @include font-face('SpaceGrotesk-Bold', '../../public/fonts/static/SpaceGrotesk-Bold.ttf', bold);
+// @include font-face('SpaceGrotesk-Medium', '../../public/fonts/static/SpaceGrotesk-Medium.ttf', medium);
+// @include font-face('SpaceGrotesk-Variable', '../../public/fonts/SpaceGrotesk-VariableFont_wght.ttf', variable);
